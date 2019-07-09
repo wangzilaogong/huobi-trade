@@ -2,7 +2,7 @@
 ### 主要是HB_REST和HB_WS 对象
 常用的WS
 ```javascript
-const HBOBJ = require('./hb_sdk')
+const HBOBJ = require('huobi-trade')
 const {HB_REST , HB_WS} = HBOBJ
 HB_WS.initWs(`{
     "sub": "market.btcusdt.kline.5min",
