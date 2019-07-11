@@ -8,15 +8,16 @@ HB_WS.initWs(`{
     "sub": "market.btcusdt.kline.5min",
     "id": "id1"
   }`,function(data){
-      console.log(data）
+      console.log(data)
   })
 ```
 
 ### 常用的REST
 ```javascript
 async function test(){
-const res =  await HB_REST.getAccount()
-console.log(res.data[0].id)
+const res =  await HB_REST.getCommonSymbols()
+console.log(res)
+}
 test()
 ```
 
@@ -37,3 +38,43 @@ test()
 }
 
 ```
+### NOW SUPPORT MORE RESTFULL API
+|  API   | DESCRIBTION  |
+|  :----:  | ----  |
+| getCommonSymbols  | 获取所有的交易对 |
+| getAllCurrencys  | 获取所有币种 |
+| getCurrentTime  | 获取当前系统时间 |
+| getHistoryKline  | 获取历史kline数据 |
+| getTicker  | 获取聚合行情数据 |
+| getAllTickers  | 所有交易对的最新Tickers |
+| getDepth  | 指定交易对的当前市场深度数据 |
+| getLastestTrade  | 指定交易对最新的一个交易记录 |
+| getHistoryTrade  | 指定交易对近期的所有交易记录 |
+| get24hMarket  | 最近24小时行情数据 |
+| getAccount  | 获取accountInfo |
+| getBalance  | 查询指定账户的余额 |
+| postOrder  | 下单 |
+| cancelOrder  | 取消订单 |
+| getUndoneOrders  | 查询已提交但是仍未完全成交或未被撤销的订单 |
+| cancelListOrders  | 发送批量撤销订单 |
+| getOrderDetail  | 查询已提交但是仍未完全成交或未被撤销的订单 |
+| getHistoryOrders  | 接口基于搜索条件查询历史订单 |
+| get48hHistoryOrders  | 口基于搜索条件查询最近48小时内历史订单 |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

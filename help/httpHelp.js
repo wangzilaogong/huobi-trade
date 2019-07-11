@@ -87,8 +87,8 @@ function CALL_POST(url ,body,opts){
 
 const call_api = (method, path, payload, body)=>{
 
-    const url = `${config.REST_URL}${path}?${payload}`
-    console.log(url,'sdsdsdsssd')
+    const url = payload ? `${config.REST_URL}${path}?${payload}`:`${config.REST_URL}${path}`
+    console.log(url,'CALL_URL')
     if( method === 'GET'){
         const opts = {
 
