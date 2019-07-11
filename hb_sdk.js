@@ -268,26 +268,5 @@ const HB_WS = {
   
 }
 
-async function aaaa(){
-// const res =  await HB_REST.getAccount()
-// console.log(res.data[0].id,'sss2')
-// const qq = await HB_REST.getBalance(res.data[0].id)
-// console.log(qq.data.list,'sss')
-// qq.data.list.map((item)=>{
-//     console.log(item)
-// })
-// const res2 = await HB_REST.postOrder('sell-limit', 'hptusdt',21,0.15492)
-// console.log(res2 ,'result')
-// const rrrr = await HB_REST.cancelOrder(39831136241)
-// console.log(rrrr ,'result')
-// console.log(ws,'sss')
-// const res = await HB_REST.get24hHistoryOrders()
-// console.log(res)
-Object.keys(HB_REST).map((I)=>{
-    console.log(I)
-})
-}
-aaaa()
-
 exports.HB_REST = HB_REST
 exports.HB_WS = HB_WS

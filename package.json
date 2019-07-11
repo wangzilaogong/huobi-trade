@@ -1,6 +1,6 @@
 {
   "name": "huobi-trade",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "trade for huobi market marker",
   "main": "hb_sdk.js",
   "scripts": {
